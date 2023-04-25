@@ -1,0 +1,24 @@
+<template>
+	<h1>Cardapio</h1>
+	<div class="um">
+		<p>Empresa:{Empresa} </p>
+		<p>CNPJ: {CNPJ}</p>
+		<p>Endereço: {Endereco} </p>
+	</div>
+
+	<div class="dois" if:true={visible}>
+		<p>-------------</p>
+		<p>Produto: {Produto} </p>
+		<p>Descrição: {Descricao} </p>
+		<p>Preço: R$ {Preco}</p>
+	</div>
+
+	<div class="tres" if:true={visible}>
+		<h1>Promoção</h1>
+		<p>oferta1: {oferta1} </p>
+		<p>oferta2: {oferta2} </p>
+	</div>
+
+	<lightning-button variant="brand" label="Ocultar" title="Primary action" onclick={ocultar}
+		class="slds-m-left_x-small"></lightning-button>
+</template>
